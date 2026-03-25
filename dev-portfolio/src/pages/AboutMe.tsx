@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './AboutMe.module.css'
 
 function AboutMe() {
   return (
-    <div>
+    <div className={styles.content}>
       
     </div>
   )
