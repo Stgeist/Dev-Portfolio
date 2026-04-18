@@ -1,0 +1,90 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: white;
+}
+
+.text {
+  max-width: 650px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.85);
+}
+
+.project {
+  margin-top: 3rem;
+  padding: 2rem;
+
+  border: 1px solid rgba(255,255,255,0.1);
+
+  box-shadow:
+    0 0 15px rgba(255,255,255,0.1),
+    0 0 40px rgba(255,255,255,0.05);
+}
+
+.glow {
+  letter-spacing: 0.15em;
+  margin-bottom: 1.5rem;
+
+  text-shadow:
+    0 0 10px rgba(255,255,255,0.8),
+    0 0 25px rgba(255,255,255,0.3);
+}
+
+/* INPUT */
+.inputRow {
+  display: flex;
+  gap: 1rem;
+}
+
+.inputRow input {
+  flex: 1;
+  padding: 0.8rem;
+
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+}
+
+.inputRow button {
+  padding: 0.8rem 1.2rem;
+
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.5);
+  color: white;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.inputRow button:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* RESULT */
+.result {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.result a {
+  color: white;
+  text-decoration: none;
+
+  text-shadow:
+    0 0 10px rgba(255,255,255,0.8);
+}
+
+.copied {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.error {
+  margin-top: 1rem;
+  color: #ff6b6b;
+}

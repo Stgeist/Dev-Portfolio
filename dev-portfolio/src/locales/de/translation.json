@@ -1,0 +1,21 @@
+{
+  "nav.home": "Start",
+  "nav.about": "Über mich",
+  "nav.lab": "Lab",
+  "nav.contact": "Kontakt",
+
+  "home.title": "Junior Softwareentwickler mit Leidenschaft für moderne Webanwendungen.",
+  "home.subtitle": "Ich lege Wert auf sauberen Code, schlichtes Design und kontinuierliches Lernen",
+  "home.focus": "Aktuell fokussiert auf",
+
+  "about.title": "Ein bisschen über mich",
+  "about.text": "Ich bin ein Junior Softwareentwickler mit Fokus auf Backend-Entwicklung mit Java und Spring Boot, kombiniert mit modernen Frontend-Technologien wie React.\n\nIch baue gerne Fullstack-Anwendungen und verstehe Systeme ganzheitlich – von API-Design und Datenbankintegration bis hin zu Deployment mit Docker und CI/CD.\n\nMein aktueller Tech Stack umfasst:\n- Java (Spring Boot)\n- React\n- PostgreSQL / MongoDB\n- Docker & Docker Compose\n- Testing mit JUnit, Mockito und Jest\n\nNeben dem Programmieren arbeite ich viel an eigenen Projekten und verbessere kontinuierlich meine Fähigkeiten. Außerdem trainiere ich Kampfsport und Krafttraining, was mir hilft, diszipliniert und fokussiert zu bleiben.",
+
+  "about.cv": "Lebenslauf herunterladen",
+  "about.github": "GitHub",
+  "about.linkedin": "LinkedIn",
+
+  "contact.title": "Kontakt",
+  "contact.text": "Ich bin offen für neue Möglichkeiten, spannende Projekte und Kooperationen. Schreib mir gerne eine Nachricht — ich melde mich so schnell wie möglich zurück.",
+  "contact.email": "Kontakt aufnehmen"
+}

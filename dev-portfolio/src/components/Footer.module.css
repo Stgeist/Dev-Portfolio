@@ -1,0 +1,45 @@
+.footer {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+.inner {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.links a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+
+  transition: all 0.2s ease;
+}
+
+.links a:hover {
+  color: white;
+
+  text-shadow:
+    0 0 10px rgba(255,255,255,0.8),
+    0 0 20px rgba(255,255,255,0.3);
+}
+
+.imprint {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.imprint:hover {
+  color: white;
+}

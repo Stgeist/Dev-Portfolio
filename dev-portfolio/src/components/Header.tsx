@@ -1,10 +1,18 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
+import { useTranslation } from "react-i18next";
 
 function Header() {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lang: string) => {
+    i18n.changeLanguage(lang);
+    localStorage.setItem("lang", lang);
+  };
+
   return (
     <header className={styles.headerContainer}>
-      <nav>
+      <nav className={styles.navWrapper}>
         <ul className={styles.navList}>
           <li>
             <NavLink
@@ -13,7 +21,7 @@ function Header() {
                 `${styles.link} ${isActive ? styles.active : ""}`
               }
             >
-              Home
+              {t("nav.home")}
             </NavLink>
           </li>
 
@@ -24,7 +32,7 @@ function Header() {
                 `${styles.link} ${isActive ? styles.active : ""}`
               }
             >
-              About
+              {t("nav.about")}
             </NavLink>
           </li>
 
@@ -35,7 +43,7 @@ function Header() {
                 `${styles.link} ${isActive ? styles.active : ""}`
               }
             >
-              Lab
+              {t("nav.lab")}
             </NavLink>
           </li>
 
@@ -44,12 +52,27 @@ function Header() {
               to="/contact"
               className={({ isActive }) =>
                 `${styles.link} ${isActive ? styles.active : ""}`
-              } 
+              }
             >
-              Contact
+              {t("nav.contact")}
             </NavLink>
           </li>
         </ul>
+        <div className={styles.langSwitch}>
+          <button
+            onClick={() => changeLanguage("en")}
+            className={i18n.language === "en" ? styles.activeLang : ""}
+          >
+            EN
+          </button>
+          <span>|</span>
+          <button
+            onClick={() => changeLanguage("de")}
+            className={i18n.language === "de" ? styles.activeLang : ""}
+          >
+            DE
+          </button>
+        </div>
       </nav>
     </header>
   );
